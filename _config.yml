@@ -102,7 +102,6 @@ theme_config:
   projects_url: /
   nav:
     home: /
-    about: /about/
     articles: /archives/
   social_links:
   copyright:
