@@ -1,0 +1,6 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/milezoom/milezoom.github.io.git
+[submodule "themes/cactus"]
+	path = themes/cactus
+	url = https://github.com/probberechts/hexo-theme-cactus.git
