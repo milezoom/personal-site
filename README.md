@@ -1,2 +1,2 @@
 # personal-site
-my personal site, build using hexo
+my personal site, build using hugo

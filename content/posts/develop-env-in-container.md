@@ -1,9 +1,10 @@
 ---
-title: Develop ENV in Container
-date: 2022-07-03 15:05:40
-tags:
+title: "Develop Env in Container"
+date: 2022-07-03T15:05:40+07:00
+draft: false
 ---
-Docker is very helpful when you need specific development environtment. Also if you don’t want your OS become “dirty” because too many package installed. For my case, I use docker container to isolate environment to develop golang application. Then I use vscode remote to do coding inside the container. Here how I setup my golang dev env.  
+
+Docker is very helpful when you need specific development environtment. Also if you don't want your OS become "dirty" because too many package installed. For my case, I use docker container to isolate environment to develop golang application. Then I use vscode remote to do coding inside the container. Here how I setup my golang dev env.  
 
 ## Dockerfile
 To create container containing golang, I use base image minideb from bitnami, that based on debian.  
@@ -49,7 +50,7 @@ For the container, I use docker volume that mounted to `/app` directory for data
 ## connect VSCode to container
 To connect vscode to container, use [remote container extension][1]. Then click remote connection button at bottom left, then select `Attach to Running Container…`. A new window will open, and directory `/app` (according to specified `WORKDIR`) will be ready in file explorer. And for the integrated terminal, also mapped directly to `/app` directory.  
 
-That’s all, you can start code inside container using go SDK in the container from vscode.
+That's all, you can start code inside container using go SDK in the container from vscode.
 
 
 [1]: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers

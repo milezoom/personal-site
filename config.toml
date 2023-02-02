@@ -1,0 +1,35 @@
+baseURL = 'https://milezoom.github.io'
+languageCode = 'en-us'
+title = "Milezoom's Ideas"
+theme = 'cactus'
+copyright = 'Milezoom'
+
+[params]
+  colortheme = 'dark'
+  description = 'Hello! Welcome to my site. In here you will find some of my writing. Hope it be useful to you, or at least adding more knowledge to you :)'
+  mainSection = 'posts'
+  showAllPostsOnHomePage = false
+  postsOnHomePage = 5
+  tagsOverview = true
+  tocInline = false
+  showProjectsList = false
+  projectsUrl = ''
+
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 1
+[[menu.main]]
+  name = 'Writing'
+  url = '/posts'
+  weight = 2
+
+# [[params.social]]
+#   name = "github"
+#   link = "https://github.com/milezoom"
+# [[params.social]]
+#   name = "email"
+#   link = "010.muslim@gmail.com" # no need for "mailto:" at the start
+# [[params.social]]
+#   name = "linkedin"
+#   link = "https://www.linkedin.com/in/010.muslim/"

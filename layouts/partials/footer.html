@@ -1,0 +1,24 @@
+<footer id="footer">
+    <div class="footer-left" id="copyright-block">
+      Copyright  &copy; {{ now.Format "2006" }} {{ if .Site.Copyright }} {{ print .Site.Copyright | markdownify }} {{ else }} {{ print .Site.Title }} {{ end }}
+    </div>
+    <div class="footer-right">
+      <nav>
+        <ul>
+          {{ range .Site.Menus.main }} 
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+    <script>
+      document.onreadystatechange = () => {
+        if (document.readyState === "complete") {
+          arrTxt = document.getElementById("copyright-block").innerText.split(' ')
+          arrTxt[2] = (new Date()).getFullYear()
+          document.getElementById("copyright-block").innerText = arrTxt.join(' ')
+        }
+      }
+    </script>
+  </footer>
+  
